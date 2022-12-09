@@ -28,8 +28,19 @@
       tr:nth-child(even) {
         background-color: #dddddd;
       }
-      :target {
-        background-color: #f4d03f;
+      li:target {
+        animation: hilite 2.5s;
+      }
+      @keyframes hilite {
+        0% {
+          background: transparent;
+        }
+        10% {
+          background: #f4d03f;
+        }
+        100% {
+          background: transparent;
+        }
       }
     </style>
     <title>Team Registration</title>
