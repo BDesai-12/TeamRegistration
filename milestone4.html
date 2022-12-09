@@ -148,9 +148,9 @@
           <h5>2. Extended Description & Demos</h5>
           <ol>
             <li>
-              <b><a href="#glossary">User Story - Glossary</a></b
-              >: As a student, I want to understand all the language used in the
-              registration process so that I can make informed decisions.<br /><br />
+              <h6>
+                <a href="#glossary">User Story - Glossary</a>
+              </h6>
               <b>Extended Description</b>: According to Estevez et al., when
               designing a course registration system, one of the key principles
               to maintain is that of ensuring information is easy to access
@@ -256,10 +256,9 @@
               ></iframe>
             </div>
             <li>
-              <b><a href="#calendar">User Story - Calendar View</a></b
-              >: As a student, I want to be able to view my classes in a visual
-              format so I can understand my schedule.<br /><br />
-
+              <h6>
+                <a href="#calendar">User Story - Calendar View</a>
+              </h6>
               <b>Extended Description</b>:For this user story, the main design
               choice relates to the calendar. The calendar provides a way for
               the user to view their classes in a format that Estevez et al
@@ -296,11 +295,92 @@
             <br />
             <!--Insert demo1 embed here -->
             <li>
-              <b><a href="#searching">User Story - Searching and Hovering</a></b
-              >: As a student, I want a clear display of all course sections so
-              that I can quickly identify the best course for me.<br /><br />
-
-              <b>Extended Description</b>:
+              <h6>
+                <a href="#searching">User Story - Searching and Hovering</a>
+              </h6>
+              <b>Extended Description</b>: The main goal of this user story is
+              to provide a clean view of all class sections for the class that
+              the user searched up so that the user can quickly see all the
+              available sections. One of the biggest concerns expressed with
+              Athena was that Athena provided too much information all at once,
+              making it confusing for users to navigate and understand all the
+              information displayed on their screen. To resolve the issues
+              expressed by users of Athena, we devised three design solutions to
+              improve user experience:
+              <ol>
+                <li>
+                  Provide the user the ability to quickly see where each
+                  particular section fits into their schedule by just hovering
+                  over the class cards.
+                </li>
+                <li>
+                  Provide more information about the class by displaying a modal
+                  that will be shown in the middle of the screen.
+                </li>
+                <li>
+                  Quickly search up relevant classes that display top possible
+                  results.
+                </li>
+              </ol>
+              <br />
+              Currently, Athena displays a list of classes in a tabular format,
+              where each row corresponds to a section of the class, displaying
+              information such as CRN, professor name, time, availability, etc.
+              as columns. However, this introduces a problem of remembering
+              where each section fits into the user’s schedule. The user will
+              have to look at the time and think whether or not the user can fit
+              this class into their schedule. This violates one of the “golden
+              rules” for interface design, which is to reduce short-term memory
+              load for users. Human attention is limited, and only around five
+              items are maintained in the short term memory at one time, so it
+              is paramount to design an interface that prioritizes recognition
+              over recall [2]. The consistent calendar display reduces
+              short-term memory load since the user does not need to remember
+              exactly what time their classes are; by hovering over class cards,
+              the user can see if the hovered section can fit within their
+              schedule by seeing the exact time the class will take place on the
+              calendar, rather than remembering the time of the class and their
+              own schedule.<br /><br />
+              Also, another major design choice was to include a pop-up window
+              to display more information about a class. The class cards display
+              the important relevant information such as time and professor, but
+              if students want to learn more about what the class is about for
+              example, the user can click on the class card to bring up a
+              pop-window that contains more information about the class. The
+              pop-up window will have sections, and the user can click on
+              sections they want to learn more about. The reason the information
+              is split up into sections is to ensure users only see information
+              that they want to see, instead of users searching for information
+              in a sea of information. This modal pop-up window can simplify a
+              complex workflow such as providing a lot of information all at
+              once [1].<br /><br />
+              Finally, we want users to quickly search up classes they need, so
+              there will be a search bar that will search for relevant key words
+              that are similar to the user’s input. This offers the user to have
+              quick shortcuts of selecting the corresponding value before the
+              user finishes typing the input. This is in line with the “golden
+              rules” of enabling shortcuts to speed up user experience, making
+              it more enjoyable to use [2]. These three design decisions were
+              chosen with the best practices in mind such as adhering to the
+              interface “golden rules”. These decisions will ultimately allow
+              users to have a better experience while using the new Athena
+              because of three things:
+              <ol>
+                <li>Reduce short-term memory load</li>
+                <li>
+                  Provide relevant information while reducing the amount of
+                  unnecessary information shown to the user
+                </li>
+                <li>Allow the use of shortcuts</li>
+              </ol>
+              <br />
+              [1] Fessenden, Therese. “Modal & Nonmodal Dialogs: When (& When
+              Not) to Use Them.” Nielsen Norman Group, 23 Apr. 2017,
+              https://www.nngroup.com/articles/modal-nonmodal-dialog/.<br /><br />
+              [2] Shneiderman, B., Plaisant, C., Cohen, M., Jacobs, S., and
+              Elmqvist, N., Designing the User Interface: Strategies for
+              Effective Human-Computer Interaction: Sixth Edition, Pearson (May
+              2016) http://www.cs.umd.edu/hcil/DTUI6<br />
             </li>
             <br />
             <div class="User Story 4 Demo">
@@ -315,12 +395,9 @@
               ></iframe>
             </div>
             <li>
-              <b><a href="#feedback">User Story - Feedback</a></b
-              >: As a student, I want to receive feedback after making changs to
-              my registration so that I can clearly know my registration status
-              (i.e. complete, incomplete, changes saved, classes added vs
-              registered, etc...).<br /><br />
-
+              <h6>
+                <a href="#feedback">User Story - Feedback</a>
+              </h6>
               <b>Extended Description</b>:For this user story, the main design
               choice relates to the calendar. The calendar provides a way for
               the user to view their classes in a format that Estevez et al
@@ -357,25 +434,267 @@
             <br />
             <!--Insert demo1 embed here -->
             <li>
-              <b><a href="#review">User Story - Review Changes</a></b
-              >: As a student, I want to review classes before submitting
-              changes so that I can confirm the accuracy of my changes.<br /><br />
-
-              <b>Extended Description</b>:
+              <h6>
+                <a href="#review">User Story - Review Changes</a>
+              </h6>
+              <b>Extended Description</b>: The focus of this user story is to
+              improve feelings of user control and allow them at all times be
+              able to know the state of their registration. More broadly, the
+              spirit of this user story is visual clarity and information
+              clarity. Users want to be able see and understand all the
+              information shared on the screen, especially as it pertains to the
+              changes that they have made to their schedule. Visual clarity and
+              information clarity were one of many pain paints in the current
+              Athena registration system that we sought to address. Therefore,
+              this user story is extremely relevant to the problem study at
+              hand. The two design choices covered in this prototype that relate
+              to visual clarity and information clarity are:
+              <ol>
+                <li>a collapsible search box</li>
+                <li>status color coding</li>
+                <li>
+                  separate landing page solely dedicated towards reviewing
+                  classes
+                </li>
+              </ol>
+              <br />
+              Accordions (collapsible boxes) are used to improve the readability
+              of a page and limit the amount of scrolling, so we allow the
+              Search Classes to be collapsible, to minimize the amount of
+              scrolling a user will need when looking at the cards of “My
+              Classes” and “Search Results.” [1] Researchers Laubheimer and
+              Budiu conducted an experiment, in which they rank strategies for
+              developing accordion, and their main take away is to “use a caret
+              icon to designate an accordion, whether on desktop or mobile — our
+              study found that of the standard set of icons used in this
+              context, only the caret performed better than either no icon or a
+              nonsense icon at indicating that than it was an accordion.” [6]
+              Students using Athena do not always need to see the search
+              criteria or search box, which means that the box takes up
+              unnecessary space. This way we increase user control by allowing
+              them to conditionally display elements when needed, and we
+              increase visual clarity and information accessibility by allowing
+              for better spacing on the user interface. More specific to this
+              user story, increased spacing and user control allows them to more
+              effectively focus on the relevant information to reviewing course
+              registration modifications.<br /><br />
+              Also, another major design choice was the use of status colors to
+              indicate the status of a class and distinguish between permanent
+              and temporary states was the use. Harley investigated the use of
+              color and icons as signifiers, and found that color and text when
+              used in combination yields the best performance among users [4].
+              For that reason, we use colors and text in combination to
+              distinguish status. Green + “Registered” signifies that a class
+              has been successfully registered for, and we choose green because
+              it symbolizes a successful state [1]. Red + “Removed” signifies
+              that a class is being removed, but has not been saved yet. We
+              choose red because it symbolizes a potentially dangerous state
+              [1]. Orange + “Added” signify that a class has been added. Orange
+              in UI/UX produces highlights important information and invokes a
+              calming/warming effect on users, and unlike green is not
+              associated with success or finality [2]. This mirrors what we are
+              trying to communicate, a sense of comfort with urgency [2]. The
+              student was successful in that the class was successfully added,
+              but the process is not done until they submit changes. Finally
+              Yellow + “Waitlist” signifies that a class has been waitlisted.
+              Following Harley’s research guidelines, we pair color and text as
+              much as possible, so that the time to learn signifiers reduces
+              greatly. And we keep color usage constant across the application,
+              so that if it is not possible to pair color and text, then the
+              color alone has some signifying power [4]. These status colors
+              improve visual information clarity and allow users when reviewing
+              their class changes to more quickly and clearly understand what
+              change they made and validate that change. For instance, a user
+              that sees orange knows that their class has been successfully
+              added but is waiting for that change ot be submitted for
+              successfully registration. In addition to quickly communicating
+              what state a class is in, status colors communicate unsaved
+              changes to users, letting them know the process is incomplete.
+              These status color improve information clarity, ensure user
+              control, and mitigate errors.<br /><br />
+              Finally, after “Continue” button is clicked on the maine
+              registration screen, the users are taken to a seperate checkout
+              page to review the classes that they have added and removed. The
+              goal is that having a separate page for reviewing changes a user
+              can see what their future schedule will look like before
+              committing their changes. On this page, users will not be able to
+              make edits to their schedule, so this is a protected space for
+              users to see what their schedule will look like. The purpose of
+              the page is to be simple and straightforward. We intentionally
+              truncate what actions a user can take. This flow is modeled after
+              Schneiderman et al’s design principle to “permit easy reversal of
+              actions” [7]. It also follow’s Estevez et al.’s recommendations
+              that registration system follow a “shopping cart functionality”
+              [3]. This page serves as a checkout screen to confirm
+              “purchases”/”course additions.” Also, the Estevez et al. emphasize
+              the importance of a “clear distinction between temporary and
+              registered classes,” so we decide to have a separate screen that
+              allows users to understand that their changes are not committed
+              [3]. Finally, we offer a back button based on research conducted
+              by the Baymard Institute, which found that many Checkout UI’s
+              suffer because they fail to add a way to go back from the final
+              checkout page [8]. In short, a separate review screen with no
+              adding/removing/waitlisting functionality places users in an
+              environment that is solely dedicated to reviewing changes. This
+              again ensures user control information and visual clarity (i.e.,
+              no other unnecessary elements like a search box, search results),
+              and it mitigates errors associated with prematurely exiting out of
+              the registration process and with incorrectly
+              registering/waitlisting/removing classes.<br /><br />
+              All in all, these three design choices allow for more user
+              control:
+              <ol>
+                <li>
+                  allowing them to have control over what the screen/spacing
+                  looks like
+                </li>
+                <li>
+                  allowing them to focus solely on reviewing the accuracy of
+                  their course changes on a separate page
+                </li>
+                <li>
+                  allowing them to easily determine the state of their changes.
+                </li>
+              </ol>
+              All these design choices go hand in hand with making sure that a
+              registering students is able to review their course changes.
+              <br /><br />
+              [1] Babich, Nick. “Using Red and Green in UI Design - Medium.” UX
+              Planet, 17 Jan. 2019,
+              https://uxplanet.org/using-red-and-green-in-ui-design-66b39e13de91.<br /><br />
+              [2] Dance, Jeff. “UI/UX Principle #29: Color Has Meaning.” Fresh
+              Consulting, 8 Nov. 2021,
+              https://www.freshconsulting.com/insights/blog/uiux-principle-29-color-has-meaning/.<br /><br />
+              [3] Estevez, Ruben, et al. "A model for web-based course
+              registration systems." International Journal of Web Information
+              Systems (2014). http://dx.doi.org/10.1108/IJWIS-05-2013-0014<br /><br />
+              [4] Harley, Aurora. “Visual Indicators to Differentiate Items in a
+              List.” Nielsen Norman Group, Nielsen Norman Group, 7 Aug. 2016,
+              https://www.nngroup.com/articles/visual-indicators-differentiators/.<br /><br />
+              [5] Jenzabar, Inc. “Accessibility at Jenzabar.” Accessibility at
+              Jenzabar, https://jenzabar.com/accessibility-at-jenzabar.<br /><br />
+              [6] Laubheimer, Page, and Raluca Budiu. “Accordion Icons: Which
+              Signifiers Work Best?” Nielsen Norman Group, Nielsen Norman Group,
+              23 Aug. 2020,
+              https://www.nngroup.com/articles/accordion-icons/.<br /><br />
+              [7] Shneiderman, B., Plaisant, C., Cohen, M., Jacobs, S., and
+              Elmqvist, N., Designing the User Interface: Strategies for
+              Effective Human-Computer Interaction: Sixth Edition, Pearson (May
+              2016) http://www.cs.umd.edu/hcil/DTUI6 [8] “The Current State of
+              Checkout UX - 18 Common Pitfalls & Best Practices – Articles.”
+              Baymard Institute,
+              https://baymard.com/blog/current-state-of-checkout-ux.<br />
             </li>
             <br />
             <!--Insert demo1 embed here -->
             <li>
-              <b
-                ><a href="#warning"
-                  >User Story - Error Preventions / Warnings</a
-                ></b
-              >: As a student, I want Athena to prevent me from making errors
-              and taking dangerous actions (e.g., navigating away when changes
-              are not saved) so that I can avoid issues and time-intensive
-              roadblocks.<br /><br />
-
-              <b>Extended Description</b>:
+              <h6>
+                <a href="#warning">User Story - Error Preventions / Warnings</a>
+              </h6>
+              <b>Extended Description</b>: This user story specific highlights a
+              users need to avoid errors, especially those that prevent students
+              from registering or registering in a timely manner. One way to
+              deal with errors is to prevent them from happening in the first
+              place and increase a student’s feelings of control. While there
+              are theoretically many types of errors, we focus on two that are
+              both prevalent and provide a good example of how error handling
+              will look in a completely fleshed out system. The error types are:
+              <ol>
+                <li>permission to register for classes</li>
+                <li>prematurely exiting the system without saving changes</li>
+              </ol>
+              <br />
+              This relates to the problem of study because error mitigation
+              allows for both a seamless and fast course registration process,
+              an improvement from the existing Athena system. To deal with the
+              first type of error, we disable the Add button for courses that
+              cannot be added for a variety of reasons: Permission of
+              Department, Time Conflict, Insufficient seats. The list of reasons
+              is large, but each of them are triggered by the same user action
+              (Adding a Class on Athena) and have the same effect (Throwing an
+              Error which prevents the student from registering). Since each of
+              these reasons are so similar, the prototype focuses on
+              illustrating one of those reasons: Time Conflict. Again, the Add
+              button is disabled, and when a user hovers over the disabled
+              button a tool tip will describing why the button is disabled. This
+              user experience can be extended to other reasons such as
+              Permission of Department and Insufficient. Therefore a limit of
+              the prototype is that users cannot discover different types of
+              error messages. All they are able to get a feel of is how the
+              error message would be displayed and how they would interact with
+              it. This is a limitation that we decided ok because again, the
+              list of potential error messages is large. In terms of why we
+              picked a disabled button accompanied with a tool tip, the overall
+              idea is to prevent users from clicking on buttons that would lead
+              to a potentially dangerous consequence, such as adding a class
+              with an error. This relates to Schneiderman et al.’s golden design
+              principle of “preventing error,” [5]. It also relates to Estevez
+              et al.’s findings that it is important to provide immediate
+              feedback to students when reigstering [1]. In terms of why
+              tooltips themselves, Krause argues that tooltips are a bad way to
+              report errors on forms, but in this case, we are not dealing with
+              a form [4]. Also, Krause mentions to use dialog boxes sparingly
+              because they are “disruptive” and increase “cognitive load” [4].
+              Users have to close the dialog box before corrrecting error,
+              meaning they have to commit to memory what the dialog box said
+              about fixing the error. Because this is not a traditional form and
+              the consequences for a dialog box are worse, we explore tooltips
+              as ann alternative, and follow the best practices outlined by
+              Joyce (e.g., moderate contrast of the tooltip with background,
+              brief explanation, etc.) [3]. Trying to add a class that cannot be
+              added is not an extremely severe/dangerous error. A student can
+              continue registering and using the system in the presence of this
+              error. Therefore, we opt for tooltips over dialog boxes.<br /><br />
+              The second type of error we focus on is when a user accidentally
+              exits the Athena registration page without saving the changes they
+              made to their schedule. This is a more dangerous error that can
+              totally overhaul and ruin all the current effort that users have
+              put towards their course registration. For instance, currently if
+              a student adds a class. That is not enough. If a student navigates
+              away from the registration with unsaved changes by clicking
+              “Cancel” or any button in the page header (e.g., Student,
+              Registration, Athena), then a dialog box with a warning will pop
+              up warning users. While Krause mentions dialog pop-ups are
+              “disruptive” and increase “cognitive load” [4], in this case, this
+              is a very dangerous action that will result in all of a users
+              efforts being lost. We want to be disruptive, and this qualifies
+              as one of Krause’s few cases where they are beneficial to use [2].
+              Furthermore, we have designed the box such that there is no
+              cognitive overload on the users. As Fessenden suggests, we use the
+              dialog box to prevent serious, irreversible errors, and have very
+              limited text on the dialog box [2].<br /><br />
+              The purpose of the prototype is to demonstrate the two ways our
+              system will alert errors to users: tooltip or dialog box,
+              depending on the type of error and urgency of the error. A key
+              limitation of the prototype is that we cannot generate all the
+              different types of errors and error messages because there are so
+              many. But all the different errors and error messages generally
+              fall into one of the two aforementioned categories. Therefore,
+              even without supporting every permutation and combination of error
+              message, we are able still able to have the full experience of
+              generating and receiving error messages. In short, each of our
+              strategies prevent errors from occurring, and the way we prevent
+              errors (i.e., tooltip vs dialog, level of disruption) is a
+              function of how dangerous/critical the error is.
+              <br /><br />
+              [1] Ben Shneiderman, Catherine Plaisant, Maxine Cohen, Steven
+              Jacobs, Niklas Elmqvist, and Nicholas Diakopoulos. 2017. Designing
+              the User Interface: Strategies for Effective Human-Computer
+              Interaction. Pearson, Boston, 6 edition. ISBN 9780134380384.<br /><br />
+              [2] Estevez, Ruben, et al. "A model for web-based course
+              registration systems." International Journal of Web Information
+              Systems (2014). http://dx.doi.org/10.1108/IJWIS-05-2013-0014<br /><br />
+              [3] Fessenden, Therese. “Modal & Nonmodal Dialogs: When (& When
+              Not) to Use Them.” Nielsen Norman Group, 23 Apr. 2017,
+              https://www.nngroup.com/articles/modal-nonmodal-dialog/.<br /><br />
+              [4] Joyce, Alita. “Tooltip Guidelines.” Nielsen Norman Group, 27
+              Jan. 2019,
+              https://www.nngroup.com/articles/tooltip-guidelines/.<br /><br />
+              [5] Krause, Rachel. “How to Report Errors in Forms: 10 Design
+              Guidelines.” Nielsen Norman Group, 3 Feb. 2019,
+              https://www.nngroup.com/articles/errors-forms-design-guidelines/.We
+              use tooltips to explain why users cannot click on a disabled
+              button (e.g., Time Conflict, Permission of Department Needed).<br />
             </li>
             <!--Insert demo1 embed here -->
           </ol>
